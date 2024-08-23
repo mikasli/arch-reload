@@ -9,14 +9,14 @@ I wrote this program to make reinstalling Arch less tedious and more declarative
 
 ## Config formatting
 ### Package config
-Simply write the name of the package you want to install, one per line
+Simply write the name of the package you want to install, one per line.
 Comments start with a number sign(\#) 
 ### Structure config
 Directory structures are formatted as shown below, with a colon(:) separating the two file paths
 ```
 <file-path-in-arch-reload>:<file-path-in-home-folder>
 ```
-If, for example, you had a background.png file at "./files/background.png", and you wanted it in "/home/<user-home>/Pictures/", you would write either:
+If, for example, you had a background.png file at "./files/background.png", and you wanted it in "/home/user-home/Pictures/", you would write either:
 ```
 ./files/background.png:~/Pictures/background.png
 ./files/background.png:~/Pictures/
