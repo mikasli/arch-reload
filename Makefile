@@ -1,8 +1,8 @@
-CC = g++
-CFLAGS = -g
+CXX = g++
+CXXFLAGS = -g
 
 ArchReload: src/main.cpp
-	$(CC) $(CFLAGS) -o ArchReload src/main.cpp
+	$(CXX) $(CXXFLAGS) -o ArchReload src/main.cpp
 
 test: ArchReload
 	./ArchReload
