@@ -68,8 +68,25 @@ void handle_packages() {
 	package_config.close();
 }
 
+void handle_commands() {
+	std::ifstream command_config;
+	command_config.open("./configs/commands.conf");
+
+	std::string line;
+	while (getline(command_config, line)) {
+		if (line.find('#') != std::string::npos) {
+			line = line.substr(0, line.find('#'));
+		}
+		if (!line.empty()) {
+			std::cout << "[Executing] " << line << std::endl;
+			system(line.c_str());
+		}
+	}
+}
+
 int main() {
 	handle_structure();
 	handle_packages();
+	handle_commands();
 	return 0;
 }

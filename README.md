@@ -9,8 +9,8 @@ I wrote this program to make reinstalling Arch less tedious and more declarative
 
 ## Config formatting
 ### Package config
-Simply write the name of the package you want to install, one per line.
-Comments start with a number sign(\#) 
+Simply write the name of the package you want to install, one per line.\
+Comments start with a number sign(\#). 
 ### Structure config
 Directory structures are formatted as shown below, with a colon(:) separating the two file paths
 ```
@@ -21,6 +21,8 @@ If, for example, you had a background.png file at "./files/background.png", and 
 ./files/background.png:~/Pictures/background.png
 ./files/background.png:~/Pictures/
 ```
+### Command config
+Write out commands as you would like them executed in the terminal. Comments are indicated like before(with a '\#').
 
 ## Installation/Setup
 1. Clone the repository
@@ -51,4 +53,6 @@ chmod u=rwx ./ArchReload
 7. Follow any prompts yay may give you
 
 ## TODO
-1. Command support
+~~1. Inline comment support~~
+~~2. Command support~~
+
