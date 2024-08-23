@@ -53,6 +53,6 @@ chmod u=rwx ./ArchReload
 7. Follow any prompts yay may give you
 
 ## TODO
-~~1. Inline comment support~~
+~~1. Inline comment support~~\
 ~~2. Command support~~
 
