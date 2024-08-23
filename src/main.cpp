@@ -20,7 +20,10 @@ void parse_file_paths(std::vector<FilePair>& file_paths) {
 
 	std::string line;
 	while (getline(structure_config, line)) {
-		if (line[0] != '#' && !line.empty()) {
+		if (line.find('#') != std::string::npos) {
+			line = line.substr(0, line.find('#'));
+		}
+		if (!line.empty()) {
 			file_paths.push_back(FilePair(line.substr(0, line.find(':')), line.substr(line.find(':') + 1, line.length())));
 		}
 	}
@@ -52,7 +55,10 @@ void handle_packages() {
 
 	std::string line;
 	while (getline(package_config, line)) {
-		if (line[0] != '#' && !line.empty()) {
+		if (line.find('#') != std::string::npos) {
+			line = line.substr(0, line.find('#'));
+		}
+		if (!line.empty()) {
 			std::string pkg_command = "yay -S --needed --noconfirm " + line;
 			std::cout << "[Executing] " << pkg_command << std::endl;
 			system(pkg_command.c_str());
