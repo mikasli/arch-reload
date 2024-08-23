@@ -1,5 +1,6 @@
 ## Functionality
-I wrote this program to make reinstalling Arch less tedious and more declarative. Essentially, it automates installing packages and distributing files around the system.
+I wrote this program to make reinstalling Arch less tedious and more declarative. Essentially, it automates installing packages and distributing files around the system.\
+**Note**: This is not similar to a script like archinstall. It is intended to be used after the system is configured and in a usable state.
 
 ## Requirements
 1. Arch: This program is intended to be used on Arch linux
