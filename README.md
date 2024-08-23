@@ -47,7 +47,7 @@ g++ -o ArchReload src/main.cpp
 ```
 chmod u=rwx ./ArchReload
 ```
-5. Edit the structure and packages config files, and add you own files to ./files/
+5. Edit the structure and packages config files, and add your own files to ./files/
 6. Execute the binary
 ```
 ./ArchReload
